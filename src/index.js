@@ -10,6 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/clientes/', require('../routes/RoutesCliente'));
+app.use('/api/productos/', require('../routes/RoutesProducto'));
 
 
 app.listen(port, () => console.log('Nuestro servidor se encuentra conectado http://localhost:5000', port));
